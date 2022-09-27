@@ -11,7 +11,7 @@
         <style>
             body {
                 font-family: 'Roboto', sans-serif;
-                
+
             }
         </style>
     </head>
@@ -28,13 +28,9 @@
             </div>
         </header>
         <!-- Navbar End-->
-        <div class="relative flex items-top justify-center  ">
-            <div class=" mx-auto ">
-                <div class="flex justify-center">
-                    <img src="{{ asset('images/fast-food-logo-emblem.png') }}" class="img text-center" height="55%" width="55%"/>
-                </div>
 
-            </div>
+        <div class="relative flex items-middle justify-center " style="background: url('images/background-fast-food.jpg') center no-repeat; background-size:cover;">
+            @yield('emblem')
         </div>
         <div class="relative flex items-top justify-center  bg-gray-100 dark:bg-gray-900 ">
             <div class=" mx-auto ">
