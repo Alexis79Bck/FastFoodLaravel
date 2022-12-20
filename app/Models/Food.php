@@ -11,5 +11,5 @@ class Food extends Model
     protected $fillable = [
         'name','description','type','ingredient','price'
     ];
-    protected $timestamps = false;
+    public $timestamps = false;
 }

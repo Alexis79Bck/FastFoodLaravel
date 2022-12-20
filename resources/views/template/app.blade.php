@@ -30,7 +30,8 @@
         <!-- Navbar End-->
 
         <div class="relative flex items-middle justify-center " style="background: url('images/background-fast-food.jpg') center no-repeat; background-size:cover;">
-            @yield('emblem')
+            {{-- @yield('emblem') --}}
+            @livewire('page.emblem')
         </div>
         <div class="relative flex items-top justify-center  bg-gray-100 dark:bg-gray-900 ">
             <div class=" mx-auto ">

@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FoodController;
+use App\Http\Controllers\DrinkController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,10 +19,9 @@ Route::get('/', function () {
     return view('main');
 })->name('main');
 
-Route::get('/foods', function () {
-    return view('foods.index');
-})->name('foods');
+Route::get('foods', [FoodController::class,'index'])->name('foods');
+Route::post('foods/new', [FoodController::class,'store'])->name('newFood');
 
-Route::get('/drinks', function () {
+Route::get('drinks', function () {
     return view('drinks.index');
 })->name('drinks');

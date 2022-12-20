@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 
 class FoodController extends Controller
 {
+
     /**
      * Display a listing of the resource.
      *
@@ -14,7 +15,9 @@ class FoodController extends Controller
      */
     public function index()
     {
-        //
+        $foods =Food::all();
+
+        return response()->view('foods.index',compact('foods'));
     }
 
     /**

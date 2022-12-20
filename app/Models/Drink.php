@@ -11,5 +11,5 @@ class Drink extends Model
     protected $fillable = [
         'name','description','type','price'
     ];
-    protected $timestamps = false;
+    public $timestamps = false;
 }
